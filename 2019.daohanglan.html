@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>侧边导航栏</title>
+	<style type="text/css">
+		*{
+         	padding: 0;
+         	margin: 0;
+         }
+         a{
+         	text-decoration: none;
+         }
+         li{
+         	list-style: none;
+         }
+         #p1{
+         	height:180px;
+            width:50px;
+            float: right;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            display:block;
+         }
+          #p1 li{
+            height: 35px;
+            width: 40px;
+            text-align:center;
+            line-height: 50px;
+            padding-top:5px;
+            border: blue solid 1px;
+            border-radius:10px;
+           
+         }
+         #p1 img{
+            width:30px;
+            height:30px;  
+         }
+        /*  #p1 ul{
+            float: right;
+            position: fixed;
+            right: 50px;
+            top: 100px;
+         } */
+	</style>
+</head>
+<body style="height:2000px;">
+	<div id="p1">
+		<ul id="do1">
+			<li><img src="image/二维码.png"></li>
+		   <li><img src="image/QQ.png"></li>
+         <li><img src="image/微信.png" ></li>
+         <li id="list" style="display:none;"><a href="#"><img src="image/top.png" ></a></li>
+		</ul>
+	</div>
+</body>
+<script type="text/javascript">
+   var p1=document.getElementById("p1");
+   var do1=document.getElementById("do1");
+   var list=document.getElementById("list");
+   window.onscroll=function(){
+      var st=document.documentElement.scrollTop;
+      console.log(st);
+      if(st>600){
+          list.style.display="block";
+      }
+      else{
+          list.style.display="none";
+      }
+   }
+</script>
+</html>

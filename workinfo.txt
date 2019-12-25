@@ -1,0 +1,47 @@
+韩(2539710942) 2019/12/23 11:20:16
+https://experiences.booking.com/attractions/city/gb/london.zh-cn.html?aid=357028;label=bin859jc-1DCAMYhwQoMUIFeGktYW5IK1gCaDGIAQGYASu4ARfIARTYAQPoAQH4AQKIAgGoAgO4ArbjgPAFwAIB;sid=2444f2cbe8ba5894d2e7d0fa75923d88;source=attractions_index_open_shop&
+
+韩(2539710942) 2019/12/23 11:20:16
+http://www.xiaozhu.com/?utm_source=360&utm_content=sem&utm_term=%E6%B0%91%E5%AE%BF&utm_medium=search%5Fcpc%5F%E6%B0%91%E5%AE%BF&utm_campaign=M%2D%E8%A1%8C%E4%B8%9A%E6%A0%B8%E5%BF%83%E8%AF%8D%2D%E8%AF%8D%E6%A0%B9
+
+https://www.airbnb.cn/?af=15514848&c=.pi12.pkqihoo_kwid21978289
+https://www.airbnb.cn/s/all?refinement_paths%5B%5D=%2Fplaylists%2F36274
+https://www.airbnb.cn/
+韩(2539710942) 2019/12/24 12:30:23
+http://www.liemingwang.com/dpmz/4959.html
+
+韩(2539710942) 2019/12/24 12:30:38
+https://www.yw11.com/dianmingdaquan/20170426_18394.html
+https://www.yw11.com/dianmingdaquan/20170406_17740.html
+http://www.51yuansu.com/
+http://www.xiaozhu.com/
+
+关于颜色：
+http://tool.c7sky.com/webcolor/
+http://www.51yuansu.com/
+1、一般段落字体字号颜色默认
+2、小标题加粗，字号待定(写的时候再确认)
+3、每人找一张(width>=1200,height>= 400 )的高清图发给我做轮播图
+4、找出的图片先发给我一套(尽量早点，有的图片首页可能会用到)
+5、留出菜单栏和最顶部的盒子(一个人写，有时间的可以先写，写完后截网页图到群里，确定后，分享代码)
+6、最底部放
+
+
+一个人写完分享代码
+7、路径和命名
+（2）html文件和css，js文件夹同级，命名：民宿名称(英文或拼写) .html
+（3）文档标题：<title>民宿全称（中文）</title>
+（4）css代码路径: css/ 民宿名称(英文或拼写) .css
+（5）js路径: js/民宿名称(英文或拼写）.js
+8、写完后把所有代码放在一个文件夹发给我，文件夹命名：民宿名称(英文或拼写）
+9、具体结构可以边写边商量，有问题再群里讨论
+10、找图片时看到合适的logo在群里分享
+
+（1）图片路径: images/img01,img02.....
+（2）html文件和css，js文件夹同级，命名：民宿名称(英文或拼写) .html
+（3）文档标题：<title>民宿全称（中文）</title>
+（4）css代码路径: css/ 民宿名称(英文或拼写) .css
+（5）js路径: js/民宿名称(英文或拼写）.js
+
+
+imgd00,imgd01

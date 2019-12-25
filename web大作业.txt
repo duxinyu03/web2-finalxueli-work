@@ -1,0 +1,51 @@
+/* -----------------------导航style.css---------------------------------- */
+.bigBox{
+	height:50px;
+	border-bottom: 4px solid red;
+}
+.container{
+	width:1200px;
+	height:50px;
+	margin:0 auto;
+	margin-top: 10px;
+}
+.container li{
+	line-height:40px;
+	width:80px;
+	text-align:center;
+	display:inline-block;
+	margin-right:40px;
+}
+.container select{
+	height:40px;
+	padding-top:0px;
+	font:20px;
+	color:#050505;
+}
+.container a{
+	text-align:center;
+	font:20px;
+	color:#050505;
+}
+.container li:hover > a{
+	color: #ffffff;
+}
+.container li:hover{
+	background:#fd0304;
+	border-radius:6px;
+}
+
+<!------------------------------- 导航栏 html ------------------------------->
+	<div class="bigBox">
+		<div class="container">
+			<ul>
+    			<li><a href="#">首页</a></li>
+    			<li><a href="#">海滨民宿</a></li>
+    			<li><a href="#">冰雪民宿</a></li>
+    			<li><a href="#">温泉民宿</a></li>
+    			<li><a href="#">传统民宿</a></li>
+    			<li><a href="#">其他</a></li>
+    		</ul>
+		</div>
+	</div>
+

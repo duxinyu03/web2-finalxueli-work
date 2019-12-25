@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+	  		width:100%;
+	  		background:url('QQ图片20191225194952.jpg');
+	  		background-repeat: no-repeat;
+		}
+		.box{
+			width: 300px;
+			height: 400px;
+			padding: 0 20px;
+			border: 2px solid #1688ea;
+			margin: 50px auto;
+		}
+		.tit{
+			margin-top: 5px;
+			margin-bottom: 30px;
+		}
+		.brand{
+			color: #1688ea;
+			font-size: 18px;
+			margin-right: 20px;
+		}
+		.inp{
+			width: 100%;
+			height: 40px;
+			text-indent: 8px;
+		}
+		.notice{
+			height: 30px;
+			line-height: 30px;
+			font-size: 12px;
+		}
+		.btn{
+			background: #1688ea;
+			width: 100%;
+			height: 40px;
+			border: none;
+			margin-top: 8px;
+			color: #fff;
+			border-radius: 3px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="back">
+		<div class="box">
+			<p class="tit">
+			<span>用户注册</span>
+			</p>
+
+			<input class="inp" type="text" placeholder="用户名">
+			<p class="notice"></p>
+
+			<input class="inp" id="password" type="password" placeholder="密码">
+			<p class="notice"></p>
+
+			<input class="inp" id="repassword" type="password" placeholder="确认密码">
+			<p class="notice"></p>
+
+			<input type="checkbox" checked>下次自动登录
+			<button class="btn">注册</button>
+		</div>
+	</div>
+</body>
+<script>
+	// 1）用户名和密码文本域在获得焦点时会分别在下方显示对应的提示文字，失去焦点时提示文字消失。
+		var box=document.getElementsByClassName("box");
+		var inp=document.getElementsByClassName("inp");
+		var notice=document.getElementsByClassName("notice");
+		var flag=0;
+		inp[0].onfocus=function(){
+			for(var j=0;j<notice.length;++j){
+				if(j==0){
+					notice[j].innerHTML="请输入4-10位用户名";
+					flag=1;
+				}
+			}
+		}
+		inp[0].onblur=function(){
+			for(var j=0;j<notice.length;++j){
+				if(j==0 && flag==1){
+					notice[j].innerHTML="";
+					flag=0;
+				}
+			}
+		}
+		inp[1].onfocus=function(){
+			for(var j=0;j<notice.length;++j){
+				if(j==1 && flag==0){
+					notice[j].innerHTML="请输入6-12位密码";
+					flag=1;
+				}
+			}
+		}
+		inp[1].onblur=function(){
+			for(var j=0;j<notice.length;++j){
+				if(j==1 && flag==1){
+					notice[j].innerHTML="";
+				}
+			}
+		}
+		inp[2].onfocus=function(){
+			for(var j=0;j<notice.length;++j){
+				if(j==2){
+					notice[j].innerHTML="请再输入一次密码";
+					flag=1;
+				}
+			}
+		}
+		inp[2].onblur=function(){
+			for(var j=0;j<notice.length;++j){
+				if(j==2 && flag==1){
+					notice[j].innerHTML="";
+					flag=0;
+				}
+			}
+		}
+		var btn=document.getElementsByClassName("btn");
+		btn[0].onclick=function(){
+			var password=document.getElementById("password").value;
+			var repassword=document.getElementById("repassword").value;
+			if(inp[0].value.length<4 || inp[0].value.length>10){
+				notice[0].innerHTML="用户名位数不对";
+			}
+			var str1=inp[1].value;
+			if(inp[1].value.length<6 || inp[1].value.length>12){
+				notice[1].innerHTML="密码位数不对";
+			}
+			var str2=inp[2].value;
+			if(inp[2].value.length<6 || inp[2].value.length>12){
+				notice[2].innerHTML="密码位数不对";
+			}
+			if(password!=repassword){
+				notice[2].innerHTML="和上次密码不符";
+			}
+			if(inp[0].value.length>=4 && inp[0].value.length<=10 && inp[1].value.length>=6 && inp[0].value.length<=12 && password==repassword){
+				alert("注册成功");
+				location='新海滨民宿.html';
+			}
+		}
+</script>
+</html>

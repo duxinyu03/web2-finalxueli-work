@@ -1,0 +1,116 @@
+/* -----------------------TraditResidBuildings.css---------------------------------- */
+.middle{
+	height: 85px;
+	display: inline-block;
+}
+.logo{
+	margin-left: 180px;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+.logo img{
+	width: 210px;
+	height: 85px;
+}
+.mcontent{
+	position: absolute;
+	padding: 0 8px;
+}
+.search{
+	color: hsl(0, 0%, 20%);
+	height: 23px;
+	width: 440px;
+	padding: 12px 44px;
+	background-image: url("https://q-xx.bstatic.com/psb/attractions-frontend/static/media/icon_search.6efe24de.svg");
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position:bottom 11px left 11px;
+	border:1px solid hsl(0,0%,42%);
+	border-radius:22px;
+	position: relative;
+	left: 490px;
+	top: 25px;
+	font: 14.78px '微软雅黑';
+}
+.hidden{
+	width: 410px;
+	height: 100px;
+	position: absolute;
+	padding: 40px 8px 20px;
+	background-color: #fff;
+	box-shadow:0px 4px 4px 6px rgba(0,0,0,0.2);
+	border-radius:8px 8px 30px 30px ;
+	float: top;
+}
+.hidden li{
+	height: 20px;
+	position: relative;
+	left: 20px;
+	bottom: 20px;
+	display: block;
+	margin-top: 5px;
+}
+.hidden a{
+	font: normal 17px '微软雅黑';
+	padding-bottom: 15px;
+	color: orange;
+}	
+.hidden a:hover{
+	color: red;
+}
+.right img{
+	float: right;
+	width: 410px;
+	height: 105px;
+	margin-left: 958px;
+	position: relative;
+	bottom: 95px;
+	opacity: 0.9;
+}
+<!------------------------------- TraditResidBuildings.html ------------------------------->
+	<div class = "middle">
+		<div class = "logo">
+			<img src = "images/logo.png" alt = "logo">
+		</div>
+		<div class = "mcontent">
+			<form>
+				<input class = "search" id = "search" type = "text" name = "search" placeholder="搜索目的地、城市、景点……" value=""/>
+				<!-- <input class = "button" type = "button" onclick = "javascript:searchCity('home');" value = "搜索"/> -->
+			</form>
+		</div>
+		<ul class = "hidden" id = "hidden" style = "opacity: 0; margin-left: 1000px; margin-top: 10px;">
+			<li>
+				<a href="#" target = "_blank">查看民宿详细分类</a>
+			</li>
+			<li>
+				<a href="#" target = "_blank">海滨民宿</a>
+			</li>
+			<li>
+				<a href="#" target = "_blank">冰雪民宿</a>
+			</li>
+			<li>
+				<a href="#" target = "_blank">温泉民宿</a>
+			</li>
+			<li>
+				<a href="#" target = "_blank">传统建筑民宿</a>
+			</li>
+		</ul>
+		<div class = "right">
+			<img src = "images/imgd06.png" alt = "scene"/> 
+		</div>
+	</div>
+
+<!------------------------------- TraditResidBuildings.js ------------------------------->
+var search = document.getElementById("search");
+var hidden = document.getElementById("hidden");
+search.onfocus = function(){
+	hidden.style.opacity = "1.0";
+	hidden.style.marginLeft = "600px";
+	hidden.style.marginTop = "75px";
+}
+search.onblur = function(){
+	hidden.style.opacity = "0";
+	hidden.style.marginLeft = "1000px";
+	hidden.style.marginTop = "10px";
+}

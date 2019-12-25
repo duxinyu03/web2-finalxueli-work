@@ -1,0 +1,51 @@
+-------------------------------顶部html-----------------------------------------------
+	<div class="top">
+		<div class="topCenter">
+			<ul>
+				<li class="c">欢迎来到，请</li>
+				<li class="a"><a href="">登录</a></li>
+				<li>|</li>
+				<li class="a"><a href="">注册</a></li>
+				<li class="b"><a href=""><img src="images/wx.png"></a></li>
+				<li class="b"><a href=""><img src="images/qq.png"></a></li>
+			</ul>
+		</div>
+	</div>
+
+
+----------------------------------顶部css----------------------------------------------
+a{
+	text-decoration:none;
+	color: #000;
+}
+.top{
+	height: 30px;
+	line-height: 30px;
+	color: black;
+}
+.topCenter{
+	width: 1200px;
+	height: 30px;
+	border-bottom: 1px solid red;
+	margin: 0 auto;
+}
+
+.topCenter ul{
+	float: right;
+}
+.topCenter li{
+	float: left;
+}
+.topCenter .c{
+	width: 150px;
+}
+.topCenter .a{
+	width: 40px;
+	text-align: center;
+}
+.topCenter .b{
+	width: 20px;
+	text-align: center;
+	margin-top: 2px;
+	margin-left: 10px;
+}
